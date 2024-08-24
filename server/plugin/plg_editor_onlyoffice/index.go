@@ -88,7 +88,7 @@ func init() {
 		return f
 	}).Bool()
 }
-	
+
 	can_download = func() bool {
 		return Config.Get("features.office.can_download").Schema(func(f *FormElement) *FormElement {
 			if f == nil {
@@ -365,8 +365,8 @@ func IframeContentHandler(ctx *App, res http.ResponseWriter, req *http.Request) 
                   "key": "%s",
                   "permissions": {
                       "download": %s,
-					  "edit": %t
-					  
+					  "edit": %s
+
                   }
               },
               "editorConfig": {
